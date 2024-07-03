@@ -1,0 +1,81 @@
+openapi: '3.0.2'
+info:
+  title: API Title
+  version: '1.0'
+servers:
+  - url: https://localhost/api/v1
+paths:
+  /sign-up:
+    post:
+      tags:
+        - authentication
+      summary: Sign up a new user
+      requestBody:
+        description: send password and email with username to create a new user
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '401':
+          description: return a fail if the email already exists
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'The email already exists'
+        '402':
+          description: return a fail if the data is not validated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'The password is invalid || The email is info:'
+
+        '200':
+          description: return a token that have user information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'ok'
+                  token:
+                    type: string
+                    example: '12ads3h33h'
+  /log-in:
+    post:
+      tags:
+        - authentication
+      summary: 'Log in user'
+      description: 'Using password and email to log in'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: 'example@example.com'
+                password:
+                  type: string
+                  example: 'example password'
+      responses:
+        '401':
+          description: 'email and password are not validated'

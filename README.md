@@ -1,7 +1,11 @@
 # ITSS-FlashCardWeb
 This is a project to develop a website that creates flashcards for users
 
-Ngày nay nhu cầu học ngoại ngữ ngày càng tăng cao, Cách học từ vựng và ngữ pháp thông qua flashcard xuất hiện như 1 phương pháp hỗ trợ học ngoại ngữ 1 cách hiệu quả và lịch hoạt, giúp người học ngoại ngữ dễ dàng hơn trong việc ghi nhớ kiến thức. Hệ thống hỗ trợ học ngoại ngữ bằng flashcard giúp người dùng có thể tạo ra các flashcard từ vựng theo nhu cầu học tập, đồng thời có thể xây dựng các cộng đồng hoặc lớp học để cùng chia sẻ flashcard từ vựng và tài liệu ngoại ngữ.
-
-# Giao diện minh họa
-
+Nowadays, the need to learn foreign languages ​​is increasing. Learning vocabulary and grammar through flashcards appears as a method to support foreign language learning effectively and systematically, helping foreign language learners learn more easily. memorizing knowledge. The flashcard foreign language learning support system helps users create vocabulary flashcards according to their learning needs, and can build communities or classrooms to share vocabulary flashcards and foreign language materials.
+# UI
+* Home Page
+![Alt text](demopic/1.png)
+* Collection Page
+![Alt text](demopic/2.png)
+* Library Page
+![Alt text](demopic/3.png)
